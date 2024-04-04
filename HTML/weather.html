@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location-page</title>
+    <link rel="stylesheet" href="location.css">
+</head>
+<body>
+    <!--Nav bar-->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="index.html"><img src="images/company_logo.png" alt="Company Logo"></a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#weather">Weather</a></li>
+            <li><a href="#crops">Crops</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav><br><br>
+
+    <!-- Weather Section -->
+    <section id="weather" class="content">
+    <div class="location-container">
+        <h1>Enter Your Location</h1>
+        <form action="weather.html"> <!-- Replace "weather.html" with the path to your Weather Page -->
+            <input type="text" name="city" placeholder="City" required>
+            <input type="text" name="state" placeholder="State" required>
+            <input type="text" name="zipcode" placeholder="Zip Code" required>
+            <button type="submit">Get Weather</button>
+        </form>
+    </div>
+    </section>
+
+</body>
+</html>
