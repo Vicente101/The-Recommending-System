@@ -172,6 +172,11 @@
 /*#################################*/
 /*****Achievement section *****/
 /*#################################*/
+.feature-icon{
+    height: 2rem;
+    width: 2rem;
+    color: #4CAF50;
+}
 
 .achievements {
     padding: 50px 0;

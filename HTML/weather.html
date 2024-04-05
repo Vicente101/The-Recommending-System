@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Location-page</title>
-    <link rel="stylesheet" href="location.css">
+    <link rel="stylesheet" href="weather.css">
 </head>
 <body>
     <!--Nav bar-->
@@ -23,15 +23,26 @@
 
     <!-- Weather Section -->
     <section id="weather" class="content">
-    <div class="location-container">
-        <h1>Enter Your Location</h1>
-        <form action="weather.html"> <!-- Replace "weather.html" with the path to your Weather Page -->
-            <input type="text" name="city" placeholder="City" required>
-            <input type="text" name="state" placeholder="State" required>
-            <input type="text" name="zipcode" placeholder="Zip Code" required>
-            <button type="submit">Get Weather</button>
-        </form>
-    </div>
+        <div class="weather-container">
+            <h2>Current Weather Conditions</h2>
+            <div class="weather-info">
+                <div class="weather-icon">
+                    <img src="weather_icons/sunny.png" alt="Sunny">
+                </div>
+                <div class="weather-data">
+                    <p>Temperature: 25°C</p>
+                    <p>Humidity: 70%</p>
+                    <p>Precipitation: 0mm</p>
+                </div>
+            </div>
+        </div>
+        <div class="forecast-container">
+            <h2>Weather Forecast</h2>
+            <div class="forecast-chart">
+                <!-- Include your chart or graph here -->
+                <img src="forecast_chart.png" alt="Weather Forecast Chart">
+            </div>
+        </div>
     </section>
 
 </body>
