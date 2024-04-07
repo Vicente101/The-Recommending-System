@@ -21,26 +21,44 @@
             <li><a href="#resources">Resources</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-    </nav><br><br>
+    </nav>
 
-    <!-- Weather Section -->
-    <section id="weather" class="content">
-        <div class="location-container">
-            <h1>Enter Your Location</h1>
-            <form action="weather.html">
-                <!-- Replace "weather.html" with the path to your Weather Page -->
-                <input type="text" name="city" placeholder="City" required>
-                <input type="text" name="state" placeholder="State" required>
-                <input type="text" name="zipcode" placeholder="Zip Code" required>
-                <button type="submit">Get Weather</button>
-            </form>
-        </div>
-        <div id="temp-div"></div>
-        <div id="weather-info"></div>
-        <div id="weather-icon"></div>
-        <div id="monthly-forecast"></div>
+    <section class="main">
+        <header>
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Weather got you stumped?</h1>
+                    <p>Find the right crops for your climate with one click. Let's grow!</p>
+                </div>
+            </section>
+
+            <br><br>
+            <div class="image">
+                <img src="https://freesvg.org/img/weather.png" alt="image" width="300px" height="250px" />
+                <div class="placeholder"></div>
+            </div>
+        </header>
+        <!-- Weather Section -->
+
+        <section class="container">
+            <div id="input-info">
+                <input type="text" id="input" placeholder="Location" autofocus />
+                <button><span>Get Weather</span><i></i></button>
+            </div>
+        </section>
+
+        <section class="data">
+            <h3 id="title"></h3>
+            <div class="forecast"></div>
+            <div class="fahrenheit"></div>
+            <div class="country"></div>
+            <div class="condition"></div>
+            <div class="humidity"></div>
+            <div class="wind"></div>
+        </section>
     </section>
-    <script src="./weather.js"></script>
+
+    <script src="weather.js "></script>
 </body>
 
 </html>

@@ -1,13 +1,20 @@
 /* Reset CSS */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
 /*#################################*/
+
+
 /* Navigation Bar Styles */
+
+
 /*#################################*/
+
 .navbar {
     background-color: #333;
     padding: 10px;
@@ -28,20 +35,25 @@
     color: #fff;
     font-weight: bold;
     font-size: 18px;
-    transition: color 0.3s; /* Add transition for smooth color change */
+    transition: color 0.3s;
 }
 
+
 /* Change text color to blue on hover */
+
 .navbar a:hover {
     color: #4CAF50;
 }
 
 
-
-
 /*#################################*/
+
+
 /* Hero Section Styles */
+
+
 /*#################################*/
+
 .hero {
     background-image: url("https://www.agriculture.com/thmb/ZLZfqsV9A4-DSIjGLzN7wZ2UCMY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Willard-4796255985B15D-2000-df8a3e9fefbf48f58a3efb232ba8ab47.jpg");
     background-size: cover;
@@ -83,10 +95,14 @@
 }
 
 
+/*#################################*/
+
+
+/* Benefits Section Styles */
+
 
 /*#################################*/
-/* Benefits Section Styles */
-/*#################################*/
+
 .benefits {
     padding: 50px 0;
     text-align: center;
@@ -108,11 +124,15 @@
 
 
 /*#################################*/
+
+
 /* How it Works Section Styles */
+
+
 /*#################################*/
 
 .how-it-works {
-    padding: 50px ;
+    padding: 50px;
     text-align: center;
 }
 
@@ -126,23 +146,30 @@
     margin-bottom: 20px;
 }
 
+
 /*#################################*/
+
+
 /* Testimonial Section */
+
+
 /*#################################*/
+
 .testimonials {
     padding: 50px 4rem;
 }
+
 .testimonial-image {
-    width: 100px; 
-    height: 100px; 
-    border-radius: 50%; 
-    border: 2px solid #fff; /* Adds a white border around the image */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow effect */
-    transition: transform 0.3s ease-in-out; /* Adds a smooth transition effect */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
 }
 
 .testimonial-image:hover {
-    transform: scale(1.1); /* Increases the size of the image on hover */
+    transform: scale(1.1);
 }
 
 .testimonial {
@@ -151,10 +178,10 @@
     background-color: #f9f9f9;
     padding: 20px;
     margin-bottom: 20px;
-    position: relative; 
-    display: flex; /* Use flexbox for better alignment */
-    align-items: center; /* Align items vertically */
-    justify-content: space-between; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .testimonial p {
@@ -168,11 +195,15 @@
 }
 
 
+/*#################################*/
+
+
+/*****Achievement section *****/
+
 
 /*#################################*/
-/*****Achievement section *****/
-/*#################################*/
-.feature-icon{
+
+.feature-icon {
     height: 2rem;
     width: 2rem;
     color: #4CAF50;
@@ -189,7 +220,7 @@
 
 .achievement i {
     font-size: 48px;
-    color: #4CAF50; /* Green color */
+    color: #4CAF50;
     margin-bottom: 10px;
 }
 
@@ -197,8 +228,13 @@
     font-size: 18px;
 }
 
+
 /*#################################*/
+
+
 /***** FOOTER *****/
+
+
 /*#################################*/
 
 .footer {
@@ -219,7 +255,7 @@
 }
 
 .logo img {
-    width: 100px; /* Adjust the width of the logo */
+    width: 100px;
     height: auto;
 }
 
@@ -241,31 +277,32 @@
 }
 
 .logo img {
-    width: 100px; 
-    height: 100px; 
-    border-radius: 50%; 
-    background-color: transparent; /* Remove the background color */
-    object-fit: cover; /* Ensure the logo fills the circle */
-    display: block; /* Ensure proper alignment */
-    margin: 0 auto; /* Center the logo horizontally */
-    
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: transparent;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
 }
 
+
 /* Position the logo on the left side */
+
 .nav-logo {
     margin-right: auto;
 }
 
 .nav-logo img {
-    width: 50px; 
-    height: 50px; 
-    border-radius: 50%; /* Make the logo round */
-    transition: transform 0.3s ease-in-out; /* Add transition for smooth hover effect */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
 }
+
 
 /* Add hover effect to the logo */
+
 .nav-logo img:hover {
-    transform: scale(1.1); /* Scale the logo slightly on hover */
+    transform: scale(1.1);
 }
-
-
