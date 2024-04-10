@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Location-page</title>
     <link rel="stylesheet" href="location.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
@@ -49,13 +50,41 @@
 
         <section class="data">
             <h3 id="title"></h3>
-            <div class="forecast"></div>
-            <div class="fahrenheit"></div>
-            <div class="country"></div>
-            <div class="condition"></div>
-            <div class="humidity"></div>
-            <div class="wind"></div>
+            <div class="grid-container">
+                <div class="weather">
+                    <img src="https://cdn-icons-png.flaticon.com/128/7916/7916710.png" alt="image" width="100" height="100" />
+                    <div class="forecast"><i class="fas fa-thermometer-half"></i> Current Temperature in Celsius: </div>
+
+                    <img src="https://cdn-icons-png.flaticon.com/128/1163/1163717.png" alt="image" width="100" height="100" />
+                    <div class="fahrenheit"><i class="fas fa-thermometer-full"></i> Current Temperature in Fahrenheit: </div>
+                </div>
+
+                <div class="weather">
+                    <div class="detail">
+                        <img src="https://cdn-icons-png.flaticon.com/128/2343/2343852.png" alt="image" width="100" height="100" />
+                        <div class="country"><i class="fas fa-globe"></i> Country: </div>
+                    </div>
+
+                    <div class="detail">
+                        <img src="https://cdn-icons-png.flaticon.com/128/8996/8996145.png" alt="image" width="100" height="100" />
+                        <div class="condition"><i class="fas fa-cloud"></i> Condition: </div>
+                    </div>
+                </div>
+
+                <div class="weather">
+                    <img src="https://cdn-icons-png.flaticon.com/128/11129/11129172.png" alt="image" width="100" height="100" />
+                    <div class="humidity"><i class="fas fa-tint"></i> Humidity: </div>
+
+                    <img src="https://cdn-icons-png.flaticon.com/128/7236/7236728.png" alt="image" width="100" height="100" />
+                    <div class="wind"><i class="fas fa-wind"></i> Wind: </div>
+                </div>
+
         </section>
+    </section>
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <p>Our system works by analyzing weather data for your location and recommending the most suitable crops for planting. Simply enter your location, and we'll provide personalized recommendations based on the current season.</p>
+    </section>
     </section>
     <script src="weather.js "></script>
 </body>
