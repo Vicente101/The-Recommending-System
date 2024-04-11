@@ -16,14 +16,20 @@
 /*#################################*/
 
 .navbar {
+    display: flex;
     background-color: #333;
-    padding: 10px;
+    padding: 1px;
+    justify-content: space-between;
+    align-items: flex;
 }
 
 .navbar ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
+    margin: auto;
+    padding-left: 0px;
+    padding-right: 15px;
 }
 
 .navbar li {
@@ -62,7 +68,7 @@
 /*#################################*/
 
 .nav-logo {
-    margin-right: auto;
+    margin-right: 0%;
 }
 
 .nav-logo img {
@@ -86,10 +92,11 @@
 /*##########################################*/
 
 .main {
-    background: url("https://www.shutterstock.com/image-photo/abstract-blurred-background-landscape-sunset-600nw-519493357.jpg"), linear-gradient(135deg, #1f4e69 0, #164058 100%);
+    background:linear-gradient(rgba(5, 22, 26, 0.2),rgba(5, 22, 26,0.2)), url("https://www.shutterstock.com/image-photo/abstract-blurred-background-landscape-sunset-600nw-519493357.jpg"), linear-gradient(135deg, #1f4e69 0, #164058 100%);
     background-size: cover;
     background-position: center;
     color: #fff;
+    height: 650px;
     padding: 140px 0 160px 0;
 }
 

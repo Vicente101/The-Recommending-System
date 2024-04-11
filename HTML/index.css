@@ -16,14 +16,20 @@
 /*#################################*/
 
 .navbar {
+    display: flex;
     background-color: #333;
-    padding: 10px;
+    padding: 1px;
+    justify-content: space-between;
+    align-items: flex;
 }
 
 .navbar ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
+    margin: auto;
+    padding-left: 0px;
+    padding-right: 15px;
 }
 
 .navbar li {
@@ -55,7 +61,7 @@
 /*#################################*/
 
 .hero {
-    background-image: url("https://www.agriculture.com/thmb/ZLZfqsV9A4-DSIjGLzN7wZ2UCMY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Willard-4796255985B15D-2000-df8a3e9fefbf48f58a3efb232ba8ab47.jpg");
+    background-image: linear-gradient(rgba(5, 22, 26, 0.450),rgba(5, 22, 26,0.450)), url("https://www.agriculture.com/thmb/ZLZfqsV9A4-DSIjGLzN7wZ2UCMY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Willard-4796255985B15D-2000-df8a3e9fefbf48f58a3efb232ba8ab47.jpg");
     background-size: cover;
     height: 400px;
     display: flex;
@@ -66,6 +72,7 @@
 }
 
 .hero-content {
+    position: relative;
     max-width: 800px;
 }
 
@@ -292,7 +299,9 @@
 /* Position the logo on the left side */
 
 .nav-logo {
-    margin-right: auto;
+    margin-right: 0;
+    padding-left: 10px;
+    padding-top: 2px;
 }
 
 .nav-logo img {
