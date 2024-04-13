@@ -61,7 +61,7 @@
 /*#################################*/
 
 .hero {
-    background-image: linear-gradient(rgba(5, 22, 26, 0.450),rgba(5, 22, 26,0.450)), url("https://www.agriculture.com/thmb/ZLZfqsV9A4-DSIjGLzN7wZ2UCMY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Willard-4796255985B15D-2000-df8a3e9fefbf48f58a3efb232ba8ab47.jpg");
+    background-image: linear-gradient(rgba(5, 22, 26, 0.450), rgba(5, 22, 26, 0.450)), url("https://www.agriculture.com/thmb/ZLZfqsV9A4-DSIjGLzN7wZ2UCMY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Willard-4796255985B15D-2000-df8a3e9fefbf48f58a3efb232ba8ab47.jpg");
     background-size: cover;
     height: 400px;
     display: flex;
@@ -94,13 +94,14 @@
     border-radius: 5px;
     text-decoration: none;
     font-size: 18px;
-    box-shadow: 0px 15px 40px rgba(50, 231, 59, 0.774);
-    transition: background-color 0.3s;
+    transition: background-color 0.5s ease-in-out;
 }
 
 .cta-button:hover {
+    box-shadow: 0px 15px 40px rgba(50, 231, 59, 0.774);
     background-color: rgb(0, 139, 23);
     letter-spacing: 0.04em;
+    transition: 0.4s ease-in-out;
 }
 
 
@@ -182,7 +183,7 @@
 }
 
 .testimonial {
-    background-image: url("https://images.unsplash.com/photo-1510353157186-4e5fec7beb6d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8fA%3D%3D");
+    background-image: url("https://images.unsplash.com/photo-1621274403997-37aace184f49?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1");
     background-size: cover;
     background-color: #f9f9f9;
     padding: 20px;
@@ -195,7 +196,7 @@
 
 .testimonial p {
     font-size: 18px;
-    color: #333;
+    color: #fff;
 }
 
 .testimonial p:last-child {
@@ -283,6 +284,8 @@
 
 .contact-button .btn:hover {
     background-color: #4CAF50;
+    color: #fff;
+    transition: 0.5s ease-in-out;
 }
 
 .logo img {
@@ -317,3 +320,12 @@
 .nav-logo img:hover {
     transform: scale(1.1);
 }
+
+
+/* ############################################# */
+
+
+/****************WEEKLY CLIMATE*******************/
+
+
+/* ############################################# */

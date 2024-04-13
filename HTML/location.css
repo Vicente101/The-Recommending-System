@@ -92,7 +92,7 @@
 /*##########################################*/
 
 .main {
-    background:linear-gradient(rgba(5, 22, 26, 0.2),rgba(5, 22, 26,0.2)), url("https://www.shutterstock.com/image-photo/abstract-blurred-background-landscape-sunset-600nw-519493357.jpg"), linear-gradient(135deg, #1f4e69 0, #164058 100%);
+    background: linear-gradient(rgba(5, 22, 26, 0.2), rgba(5, 22, 26, 0.2)), url("https://images.unsplash.com/photo-1621274403997-37aace184f49?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1"), linear-gradient(135deg, #1f4e69 0, #164058 100%);
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -181,44 +181,6 @@ header .image {
 }
 
 
-/* Container for the image */
-
-.image {
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0px 20px 40px rgba(255, 255, 255, 0.945);
-    background: linear-gradient(to right, #4caf50, #218c74);
-    animation: gradientAnimation 5s infinite alternate ease-in-out;
-}
-
-.image:hover img {
-    transform: scale(1.05);
-}
-
-@keyframes gradientAnimation {
-    0% {
-        background: linear-gradient(to right, #fdfdfd, #03dcf8);
-        /* Initial gradient colors */
-    }
-    25% {
-        background: linear-gradient(to right, #fdfdfd, #02a2ca);
-        /* Intermediate gradient colors */
-    }
-    50% {
-        background: linear-gradient(to right, #fdfdfd, #017fa5);
-        /* Intermediate gradient colors */
-    }
-    75% {
-        background: linear-gradient(to right, #fdfdfd, #014f64);
-        /* Intermediate gradient colors */
-    }
-    100% {
-        background: linear-gradient(to right, #fdfdfd, #00384e);
-        /* Final gradient colors */
-    }
-}
-
-
 /* Image styling */
 
 .image img {
@@ -246,35 +208,42 @@ header .image {
 
 #input {
     background-color: #fff7fc;
-    color: black;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     border-radius: 10px;
-    box-shadow: 0px 3px 8px rgba(50, 231, 59, 0.774);
+    border: #fff;
+}
+
+#input:hover {
+    box-shadow: 0px 3px 8px rgba(2, 176, 230, 0.774);
+    transition: 0.4s ease-in-out;
 }
 
 button {
     position: relative;
     color: #fff;
     text-decoration: none;
+    border: #0387d4;
     margin: 60px 10px;
     height: 40px;
     width: 9rem;
     border-radius: 5px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    transition: 0.2s ease;
+    transition: 0.5s ease-in-out;
 }
 
 button:hover {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #0387d4;
     letter-spacing: 0.09em;
+    transition: 0.5s ease-in-out;
+    border: #00b7ff;
+    box-shadow: 0px 3px 8px rgba(2, 176, 230, 0.774);
 }
 
 button::before {
     content: '';
     position: absolute;
     inset: 2px;
-    background: #4CAF10;
+    background: #0387d4;
 }
 
 span {
@@ -286,6 +255,10 @@ i {
     position: relative;
     inset: 0;
     display: block;
+}
+
+#input::placeholder {
+    color: black;
 }
 
 
@@ -303,7 +276,7 @@ i {
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
     margin-top: 2rem;
-    margin-left: 10rem;
+    margin-left: 13rem;
 }
 
 .forecast,
@@ -312,7 +285,7 @@ i {
 .condition,
 .wind,
 .fahrenheit {
-    margin-bottom: 2.5rem;
+    margin-bottom: 5rem;
     color: #eee;
     text-decoration: solid;
 }
@@ -322,24 +295,45 @@ i {
     border-color: #eee;
 }
 
-.data {
+.weather-info {
+    border-radius: 25px;
+    box-shadow: 3px 2px 4px #00b7ff(0, 0, 0, 0.3);
     border: 4px solid white;
+    transition: 1s ease-in-out;
+    background: rgba(35, 35, 39, 0.349);
+}
+
+.data {
     background-repeat: no-repeat;
     width: 1300px;
-    border-radius: 25px;
     margin: 0 auto;
-    margin-top: -40px;
-    padding: 10px 20px;
+    margin-top: -30px;
+    padding: 10px 10px;
     letter-spacing: 2px;
     line-height: 1.5;
-    box-shadow: 3px 2px 4px #00b7ff(0, 0, 0, 0.3);
     font-size: medium;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     visibility: hidden;
 }
 
+.weather-info:hover {
+    border: 4px solid #00b7ff;
+    box-shadow: 0px 3px 8px rgba(2, 176, 230, 0.774);
+    padding: 10px 10px;
+    transition: 1s ease-in-out;
+}
+
+.weather-info:hover .detail {
+    visibility: visible;
+}
+
 #title {
+    font-size: 20px;
+    font-weight: bold;
     text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 3rem;
 }
 
 .active {
@@ -380,5 +374,192 @@ i {
     }
     h1 {
         font-size: 40px;
+    }
+}
+
+
+/* ############################################# */
+
+
+/******************WEEKLY CLIMATE*****************/
+
+
+/* ############################################# */
+
+
+/* DATE AND TIME */
+
+.current-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 650px;
+    flex-wrap: wrap;
+    margin-top: 90px;
+}
+
+.date-container {
+    font-weight: 100;
+}
+
+.date-container .time {
+    font-size: 70px;
+}
+
+.date-container #am-pm {
+    font-size: 30px;
+    margin-left: 12px;
+}
+
+.date-container .date {
+    font-size: 30px;
+}
+
+.place-container {
+    text-align: end;
+}
+
+.place-container .time-zone {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.place-container .country {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.current-info .others {
+    display: flex;
+    flex-direction: column;
+    background: rgba(24, 24, 27, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 1px solid #eee;
+}
+
+.current-info .others .weather-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* WEEK DAY INFO */
+
+.future-forecast {
+    background: rgba(35, 35, 39, 0.349);
+    padding: 35px;
+    bottom: 0;
+    display: flex;
+    color: white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+    margin-top: 5rem;
+    border-radius: 20px;
+    height: 300px;
+}
+
+.future-forecast:hover {
+    border: 4px solid #00b7ff;
+    transition: 0.3s ease-in-out;
+}
+
+.future-forecast .today {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 5rem;
+    padding-right: 40px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2)
+}
+
+.future-forecast .today .day {
+    padding: 5px 15px;
+    background: #3c3c44;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.future-forecast .today .temp {
+    font-size: 13px;
+    padding-top: 15px;
+}
+
+.future-forecast .weather-forecast {
+    display: flex;
+}
+
+.weather-forecast .weather-forecast-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2)
+}
+
+.weather-forecast .weather-forecast-item .day {
+    padding: 5px 15px;
+    background: #3C3C44;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.weather-forecast .weather-forecast-item .temp {
+    font-weight: 100;
+    font-size: 12px;
+}
+
+@media only screen and (max-width:730px) {
+    .container {
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .future-forecast {
+        justify-content: start;
+        align-items: none;
+        overflow-y: scroll;
+    }
+    .future-forecast .today .temp {
+        font-size: 16px;
+    }
+    .date-container .time {
+        font-size: 50px;
+    }
+    .date-container #am-pm {
+        font-size: 20px;
+    }
+    .date-container .date {
+        font-size: 20px;
+    }
+    .place-container {
+        text-align: end;
+        margin-top: 15px;
+    }
+    .place-container .time-zone {
+        font-size: 20px;
+    }
+    .current-info .others {
+        padding: 12px;
+    }
+    .current-info .others .weather-item {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .future-forecast {
+        justify-content: start;
+        align-items: none;
+        overflow-x: scroll;
     }
 }
