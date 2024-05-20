@@ -22,7 +22,8 @@ include("db_connection.php");
         <ul>
             <li><a href="index.php">Home</a></li>
             <li><a href="location.php">Weather</a></li>
-            <li><a href="#crops.php">Crops</a></li>
+            <div id="crop_nav">
+            </div>
             <li><a href="#resources">Resources</a></li>
             <li><a href="contacts.php">Contact</a></li>
         </ul>

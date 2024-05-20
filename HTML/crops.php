@@ -10,9 +10,32 @@
     <title>Document</title>
 </head>
 <body>
+
+
+
 <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $location = $_POST["location"];
+
+$temp = $_GET['temp'];
+
+$hmu = $_GET['humidity'];
+
+$sql = "SELECT * FROM crops  WHERE $temp BETWEEN temp_min AND temp_max";
+$result = $conn->query($sql);
+if ($result && mysqli_num_rows($result) > 0) {
+  
+ 
+
+  while ($row = mysqli_fetch_assoc($result)) {
+   
+   echo 'Crop Name: '.  $row['crop_name']. "<br>";
+  }
+
+  
+}else {
+    echo "<p>No matching crops found!</p>";
+}
+    /*if ($_SERVER["REQUEST_METHOD"] == "GET") {
+        $location = $_GET["location"];
 
         // Fetching data from the API
         $api_key = "48b6a4da649f4320b2e33045232312";
@@ -59,6 +82,8 @@
             echo "No crop meets the current weather conditions.";
         }
     }
+
+    */
 ?>
 
 

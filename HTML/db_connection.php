@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "CropsDb";
+$username = "batcall";
+$password = "nnnnnnnn";
+$dbname = "crops";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 

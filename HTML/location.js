@@ -33,6 +33,8 @@ function data(resp) {
             return response.json();
         })
         .then((data) => {
+            document.getElementById("crop_nav").innerHTML = `<li ><a href="crops.php?temp=${data.current.temp_c}&humidity=${data.current.humidity}&location=${data.location.country}">Crops</a></li>`;
+
             forecast.innerHTML = `<i class="fas fa-thermometer-half"></i> Current Temperature in Celsius: ${data.current.temp_c} ºC`;
             farenheit.innerHTML = `<i class="fas fa-thermometer-full"></i> Current Temperature in Fahrenheit: ${data.current.temp_f} ºF`;
             country.innerHTML = `<i class="fas fa-globe"></i> Country: ${data.location.country}`;
@@ -58,6 +60,7 @@ button.addEventListener("click", () => {
     if (!input) {
         alert("Missing data");
     }
+
 
     image.style.visibility = "visible";
     placeEffect.style.visibility = "hidden";
@@ -122,6 +125,7 @@ function getWeatherData() {
 }
 
 function showWeatherData(data) {
+
     let { pressure, sunrise, sunset } = data.current;
 
     timezone.innerHTML = data.timezone;
