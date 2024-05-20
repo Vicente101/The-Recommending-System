@@ -44,9 +44,6 @@
     transition: color 0.3s;
 }
 
-
-/* Change text color to blue on hover */
-
 .navbar a:hover {
     color: #4CAF50;
 }
@@ -87,21 +84,21 @@
 }
 
 .cta-button {
-    background-color: #4CAF50;
-    color: #fff;
+    background-color: rgb(0, 168, 0);
+    color: green;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     text-decoration: none;
     font-size: 18px;
-    transition: background-color 0.5s ease-in-out;
+    transition: 0.5s ease-out;
 }
 
 .cta-button:hover {
     box-shadow: 0px 15px 40px rgba(50, 231, 59, 0.774);
     background-color: rgb(0, 139, 23);
     letter-spacing: 0.04em;
-    transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in;
 }
 
 
@@ -250,12 +247,7 @@
 .footer {
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
+    padding: 20px 4rem;
 }
 
 .footer-content {
