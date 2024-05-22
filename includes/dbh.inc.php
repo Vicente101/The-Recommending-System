@@ -1,9 +1,9 @@
 <?php
 // Database connection parameters
-$servername = "localhost"
-$username = "root";
-$password = "";
-$dbname = "weatherdb";
+$servername = "localhost";
+$username = "batcall";
+$password = "nnnnnnnn";
+$dbname = "crops";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

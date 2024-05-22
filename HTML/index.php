@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "batcall";
+$password = "nnnnnnnn";
 
 $conn = new mysqli($servername, $username, $password);
 
