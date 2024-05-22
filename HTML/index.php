@@ -37,7 +37,7 @@ $conn->close();
         <ul>
             <li><?php echo '<a href="index.php">Home</a>' ?></li>
             <?php echo '<li><a href="location.php">Get weather</a></li>'; ?>
-            <?php echo '<li><a href="#contact">Contact</a></li>' ;?>
+            <?php echo '<li><a href="contacts.php">Contact</a></li>' ;?>
         </ul>
     </nav>
 

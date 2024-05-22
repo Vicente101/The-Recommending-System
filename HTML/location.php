@@ -22,7 +22,7 @@ include("db_connection.php");
         <ul>
             <li><a href="index.php">Home</a></li>
             <li><a href="location.php">Weather</a></li>
-            <li><a href="#crops.php">Crops</a></li>
+            <li><a href="crops.php">Crops</a></li>
             <li><a href="#resources">Resources</a></li>
             <li><a href="contacts.php">Contact</a></li>
         </ul>
@@ -115,7 +115,7 @@ include("db_connection.php");
                         </div>
 
                         <div class="place-container">
-                            <div class="time-zone" id="time-zone">Zambia</div>
+                            <div class="time-zone" id="time-zone">Your Location</div>
                             <div id="country" class="country">IN</div>
                         </div>
                     </div>
@@ -179,8 +179,7 @@ include("db_connection.php");
         <br><br><br><br><br>
 
                 <!--  Footer Section -->
-                <footer class="footer">
-            <div>
+        <footer class="footer">
                 <div class="footer-content">
                     <div class="logo">
                         <img src="images/company_logo.png" alt="Company Logo" />
@@ -192,7 +191,6 @@ include("db_connection.php");
                         <a href="contacts.php" class="btn">Contact Us</a>
                     </div>
                 </div>
-            </div>
         </footer>
     </section>
     </section>

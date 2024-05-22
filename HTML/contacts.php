@@ -68,7 +68,7 @@
                         <p>Email: croprecommendation@gmail.com</p>
                     </div>
                     <div class="contact-button">
-                        <a href="contacts.php" class="btn">Contact Us</a>
+                        <a href="index.php" class="btn">Home</a>
                     </div>
                 </div>
             </div>
